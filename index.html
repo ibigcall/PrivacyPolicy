@@ -1,125 +1,274 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	Политика конфиденциальности (Privacy Policy)
-Русская версия
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Политика конфиденциальности / Privacy Policy</title>
+  <style>
+    :root { --max: 920px; --fg: #0a0a0a; --muted: #555; --bg: #fff; --hr:#eee; --link:#0a6bff; }
+    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    main { max-width:var(--max); margin:0 auto; padding:24px; }
+    h1, h2, h3 { line-height:1.3; }
+    h1 { font-size:1.8rem; margin:0 0 0.5rem; }
+    h2 { font-size:1.35rem; margin-top:2rem; }
+    h3 { font-size:1.1rem; margin-top:1.25rem; }
+    p, li { color:#111; }
+    .meta { color:var(--muted); margin-bottom:1.25rem; }
+    .lang-toggle { display:flex; gap:8px; margin:12px 0 24px; }
+    .lang-toggle a { text-decoration:none; padding:6px 10px; border:1px solid var(--hr); border-radius:8px; color:var(--link); }
+    .card { border:1px solid var(--hr); border-radius:12px; padding:16px; background:#fafafa; }
+    code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:0.95em; }
+    hr { border:0; border-top:1px solid var(--hr); margin:24px 0; }
+    table { width:100%; border-collapse:collapse; margin:8px 0 16px; }
+    th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--hr); }
+    small { color:var(--muted); }
+    .muted { color:var(--muted); }
+    .pill { display:inline-block; padding:2px 8px; border:1px solid var(--hr); border-radius:999px; font-size:12px; color:#333; background:#fff; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Политика конфиденциальности / Privacy Policy</h1>
+  <div class="meta">
+    <div><strong>Дата вступления в силу / Effective Date:</strong> 16 сентября 2025</div>
+    <div><strong>Контакт / Contact:</strong> Колчин Артём (Artem Kolchin), <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a></div>
+    <div class="muted">Приложение: <!-- TODO: укажи название приложения --> iClukalo (рабочее название)</div>
+  </div>
 
-Дата вступления в силу: 16 сентября 2025 г.
-Контактное лицо: Колчин Артём
-Email: a.kolchin928@gmail.com
+  <div class="lang-toggle">
+    <a href="#ru">Русский</a>
+    <a href="#en">English</a>
+  </div>
 
-Настоящая Политика конфиденциальности описывает, как приложение («Приложение», «мы», «наш» или «нас») собирает, использует и защищает информацию пользователей («вы», «ваш»), а также права и выборы, которые у вас есть в отношении ваших данных.
+  <!-- ===================== RU ===================== -->
+  <section id="ru" lang="ru">
+    <h2>1. Кто мы</h2>
+    <p>Настоящая Политика конфиденциальности описывает, как мобильное приложение («<strong>Приложение</strong>», «<strong>мы</strong>», «<strong>наш</strong>») обрабатывает ваши данные. Контактное лицо: Колчин Артём, email: <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a>.</p>
 
-1. Сбор данных
+    <h2>2. Какие данные мы собираем</h2>
+    <p>Мы стремимся собирать только минимально необходимые данные. Категории:</p>
+    <ul>
+      <li><strong>Технические и диагностические данные</strong>: модель устройства, ОС и версия, версия приложения, язык системы, страна по настройкам устройства, коды ошибок/крашей, журналы производительности.</li>
+      <li><strong>Данные об использовании</strong>: события взаимодействия с экраном/функциями, частота и длительность сессий, базовые метрики (например, «открыл экран X»).</li>
+      <li><strong>Контактные данные</strong> (по вашему волеизъявлению): имя/ник и email, если вы добровольно отправляете нам обратную связь или запрашиваете поддержку.</li>
+      <li><strong>Идентификаторы</strong>: случайные идентификаторы сеанса или установки (например, <span class="pill">Instance ID</span>), необходимые для аналитики/отладки. Мы не используем IDFA для таргетированной рекламы, если явно не указано и не получено согласие.</li>
+      <li><strong>Платежные данные</strong> (если есть IAP/подписки): токены транзакций, статус подписки. Платежи обрабатываются платежным провайдером (Apple/Google); реквизиты карт нам не передаются.</li>
+      <li><strong>Данные из разрешений ОС</strong> (только при явном запросе и согласии): уведомления (пуш-токен), микрофон/камера/медиатека — <em>только если соответствующая функция реально используется</em>. Без согласия доступ не предоставляется.</li>
+    </ul>
+    <p class="muted"><small>Мы <strong>не</strong> собираем: точную геолокацию, биометрию, данные о здоровье, контакты, фото/видео вне контекста явного использования функции.</small></p>
 
-Мы можем собирать следующие данные:
+    <h2>3. Цели и правовые основания обработки</h2>
+    <table>
+      <thead><tr><th>Цель</th><th>Описание</th><th>Правовое основание (GDPR)</th></tr></thead>
+      <tbody>
+        <tr><td>Работа Приложения</td><td>Предоставление функций, совместимость, доступность</td><td>Исполнение договора (ст. 6(1)(b)) и законный интерес (ст. 6(1)(f))</td></tr>
+        <tr><td>Аналитика и улучшение</td><td>Измерение стабильности, UX-метрики, A/B (без профилирования, ведущего к значимым эффектам)</td><td>Законный интерес / Согласие (если требует закон)</td></tr>
+        <tr><td>Поддержка</td><td>Ответы на обращения, диагностика проблем</td><td>Законный интерес / Исполнение договора</td></tr>
+        <tr><td>Маркетинг внутри продукта</td><td>Ненавязчивые подсказки/баннеры о функциях (не таргет-реклама)</td><td>Законный интерес / Согласие (если требуется)</td></tr>
+        <tr><td>Правовые обязательства</td><td>Бухучет платежей, ответы регуляторам</td><td>Правовая обязанность (ст. 6(1)(c))</td></tr>
+      </tbody>
+    </table>
 
-Технические данные (тип устройства, операционная система, версия приложения, язык системы).
+    <h2>4. Хранение данных</h2>
+    <ul>
+      <li><strong>Установочные идентификаторы и телеметрия</strong>: обычно 12–24 мес. с последней активности для трендов/стабильности.</li>
+      <li><strong>Обращения в поддержку</strong>: до 24 мес. (или меньше при выполнении запроса на удаление), чтобы видеть историю проблем.</li>
+      <li><strong>Финансовые записи</strong>: по требованиям закона (как правило, 3–10 лет, зависит от юрисдикции).</li>
+    </ul>
 
-Данные об использовании приложения (частота и длительность использования, взаимодействие с функциями).
+    <h2>5. Передача и категории получателей</h2>
+    <p>Мы делимся данными только в объеме, необходимом для цели:</p>
+    <ul>
+      <li><strong>Хостинг и инфраструктура</strong> (облачные поставщики, CDN).</li>
+      <li><strong>Аналитика и диагностика</strong> (краш-репорты, производительность).</li>
+      <li><strong>Платежные провайдеры</strong> (Apple/Google) — для обработки покупок.</li>
+      <li><strong>Инструменты коммуникаций</strong> (почтовые/сервис-деск платформы).</li>
+    </ul>
+    <p class="card"><strong>Список субпроцессоров (пример):</strong><br />
+      <!-- TODO: укажи фактические SDK/сервисы -->
+      • Apple App Store / Google Play (платежи, дистрибуция)<br />
+      • Краш-аналитика (например, Firebase Crashlytics / Sentry)<br />
+      • Продуктовая аналитика (например, Firebase Analytics)<br />
+      • Почта (SMTP/почтовый провайдер)
+    </p>
 
-Персональные данные (например, имя, адрес электронной почты) — только если вы добровольно их предоставите (например, при регистрации или обратной связи).
+    <h2>6. Трансграничная передача</h2>
+    <p>Если данные передаются за пределы вашей страны, мы обеспечиваем соответствующие гарантии (например, стандартные договорные положения ЕС, дополнительные меры безопасности). Конкретные местоположения дата-центров зависят от поставщиков.</p>
 
-2. Использование данных
+    <h2>7. Безопасность</h2>
+    <ul>
+      <li>Шифрование данных в транзите (HTTPS/TLS), где возможно — и в покое.</li>
+      <li>Минимизация доступа, ротация ключей/токенов, журналы аудита.</li>
+      <li>Изолированные окружения для разработки/продакшна.</li>
+      <li>Обновления зависимостей/SDK, устранение уязвимостей.</li>
+    </ul>
 
-Собранные данные используются для:
+    <h2>8. Cookies и идентификаторы</h2>
+    <p>В мобильном приложении используются SDK-идентификаторы (instance IDs, push-токены) и похожие технологии. На сайте (если есть) мы можем использовать cookies для базовой аналитики и функционирования. Вы можете управлять cookies через настройки браузера.</p>
 
-Обеспечения работы и улучшения Приложения.
+    <h2>9. Реклама и трекинг</h2>
+    <p>По умолчанию мы <strong>не</strong> ведём профилирующую рекламу. Если в будущем будет добавлена реклама/персонализация, мы предварительно запросим согласие (App Tracking Transparency/IDFA на iOS) и дадим опцию отказаться.</p>
 
-Обратной связи с пользователем.
+    <h2>10. Пуш-уведомления</h2>
+    <p>Мы отправляем пуш-уведомления только при вашем согласии и только для сервисных/функциональных целей. Вы можете отключить их в настройках системы.</p>
 
-Анализа и статистики для улучшения пользовательского опыта.
+    <h2>11. Права пользователей</h2>
+    <p>В зависимости от юрисдикции, вы можете:</p>
+    <ul>
+      <li>Запросить доступ к данным и их копию.</li>
+      <li>Исправить неточности.</li>
+      <li>Удалить данные (за исключением обязательных для закона).</li>
+      <li>Ограничить обработку или возразить против неё.</li>
+      <li>Перенести данные (data portability).</li>
+      <li>Отозвать согласие (если обработка основана на согласии).</li>
+      <li>Подать жалобу в местный орган по защите данных.</li>
+    </ul>
+    <p>Отправьте запрос на адрес: <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a>. Мы можем запросить подтверждение личности. Срок ответа — обычно до 30 дней.</p>
 
-Соблюдения требований законодательства.
+    <h2>12. Дети</h2>
+    <p>Приложение не предназначено для детей младше 13 лет (или иного возраста согласия по местному праву). Мы сознательно не собираем их данные. Если вы считаете, что ребёнок предоставил нам данные, свяжитесь с нами для удаления.</p>
 
-3. Передача данных третьим лицам
+    <h2>13. «Продажа» или «совместное использование» данных (CCPA/CPRA)</h2>
+    <p>Мы не продаём персональные данные и не осуществляем «совместное использование» для кросс-контекстной рекламы. Если это изменится, мы предоставим явный механизм opt-out.</p>
 
-Мы не передаём персональные данные третьим лицам, за исключением случаев:
+    <h2>14. Изменения настоящей Политики</h2>
+    <p>Мы можем обновлять Политику. Актуальная версия доступна в этом документе и внутри Приложения. «Дата вступления в силу» отражает последнюю редакцию.</p>
 
-Когда это необходимо для работы Приложения (например, хостинг, аналитика).
+    <h2>15. Контакты</h2>
+    <p>Колчин Артём — <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a></p>
 
-Когда требуется по закону.
+    <hr />
 
-С вашего согласия.
+    <details class="card">
+      <summary><strong>Справка для магазинов (App Store / Google Play)</strong></summary>
+      <p><em>Для форм «Data Safety»/«App Privacy»:</em></p>
+      <ul>
+        <li><strong>Собираемые данные</strong>: диагностика (краши, производительность), использование продукта (взаимодействия), идентификаторы устройства/установки; контактные данные — только если пользователь инициирует связь.</li>
+        <li><strong>Назначение</strong>: аналитика, улучшение продукта, функциональность, поддержка.</li>
+        <li><strong>Связаны ли данные с пользователем</strong>: как правило, <em>нет</em> (агрегированные/де-идентифицированные), кроме адреса email в обращениях.</li>
+        <li><strong>Отслеживание (tracking)</strong>: <em>нет</em>, если не используете рекламные SDK/IDFA.</li>
+        <li><strong>Требуется согласие</strong>: для пуш-уведомлений (iOS) и любых чувствительных разрешений/рекламы — да.</li>
+      </ul>
+    </details>
+  </section>
 
-4. Хранение и защита данных
+  <hr />
 
-Мы принимаем разумные меры для защиты ваших данных от несанкционированного доступа, изменения или уничтожения. Данные хранятся только в течение времени, необходимого для достижения целей, указанных в настоящей Политике.
+  <!-- ===================== EN ===================== -->
+  <section id="en" lang="en">
+    <h2>1. Who We Are</h2>
+    <p>This Privacy Policy explains how the mobile application (“<strong>App</strong>”, “<strong>we</strong>”, “<strong>our</strong>”) processes your data. Contact: Artem Kolchin, email: <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a>.</p>
 
-5. Права пользователей
+    <h2>2. Data We Collect</h2>
+    <p>We aim to collect the minimum data necessary. Categories include:</p>
+    <ul>
+      <li><strong>Technical & diagnostics</strong>: device model, OS and version, app version, system language, country from device settings, crash/ANR data, performance logs.</li>
+      <li><strong>Usage data</strong>: screen/feature interactions, session frequency and duration, basic UX metrics (e.g., “opened screen X”).</li>
+      <li><strong>Contact data</strong> (voluntary): name/nickname and email if you contact support or provide feedback.</li>
+      <li><strong>Identifiers</strong>: random instance or install IDs, push tokens. We do not use IDFA for targeted advertising without explicit consent.</li>
+      <li><strong>Payments</strong> (if IAP/subscriptions exist): transaction tokens, subscription status. Card details are handled by Apple/Google and are not shared with us.</li>
+      <li><strong>OS permissions data</strong> (only with explicit consent): notifications (push token), microphone/camera/library — <em>only when the related feature is used</em>.</li>
+    </ul>
+    <p class="muted"><small>We do <strong>not</strong> collect precise location, biometrics, health data, contacts, or photos/videos outside the explicit feature context.</small></p>
 
-Вы имеете право:
+    <h2>3. Purposes & Legal Bases</h2>
+    <table>
+      <thead><tr><th>Purpose</th><th>Description</th><th>Legal basis (GDPR)</th></tr></thead>
+      <tbody>
+        <tr><td>App operation</td><td>Delivering features, compatibility, availability</td><td>Contract performance (Art. 6(1)(b)); Legitimate interests (Art. 6(1)(f))</td></tr>
+        <tr><td>Analytics & improvement</td><td>Stability, UX metrics, A/B (no profiling with significant effects)</td><td>Legitimate interests / Consent where required</td></tr>
+        <tr><td>User support</td><td>Handling inquiries and troubleshooting</td><td>Legitimate interests / Contract</td></tr>
+        <tr><td>In-product messaging</td><td>Non-intrusive tips/banners about features (not ad-tracking)</td><td>Legitimate interests / Consent where required</td></tr>
+        <tr><td>Legal compliance</td><td>Accounting, regulatory requests</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
+      </tbody>
+    </table>
 
-Запрашивать доступ к своим данным.
+    <h2>4. Retention</h2>
+    <ul>
+      <li><strong>Install IDs & telemetry</strong>: typically 12–24 months from last activity for trends and reliability.</li>
+      <li><strong>Support communications</strong>: up to 24 months (or less upon deletion request) to keep issue history.</li>
+      <li><strong>Financial records</strong>: per applicable law (usually 3–10 years).</li>
+    </ul>
 
-Требовать исправления или удаления своих данных.
+    <h2>5. Sharing & Recipients</h2>
+    <p>We share data only as needed:</p>
+    <ul>
+      <li><strong>Hosting & infrastructure</strong> (cloud providers, CDNs).</li>
+      <li><strong>Analytics & diagnostics</strong> (crash/performance tools).</li>
+      <li><strong>Payment processors</strong> (Apple/Google) for purchases.</li>
+      <li><strong>Communications tools</strong> (email/helpdesk platforms).</li>
+    </ul>
+    <p class="card"><strong>Sub-processors (example):</strong><br />
+      <!-- TODO: list actual SDKs/services -->
+      • Apple App Store / Google Play (payments, distribution)<br />
+      • Crash analytics (e.g., Firebase Crashlytics / Sentry)<br />
+      • Product analytics (e.g., Firebase Analytics)<br />
+      • Email (SMTP/email provider)
+    </p>
 
-Отозвать согласие на обработку данных (если обработка основана на согласии).
+    <h2>6. International Transfers</h2>
+    <p>Where data is transferred internationally, we rely on appropriate safeguards (e.g., EU Standard Contractual Clauses) and implement additional security measures as needed. Data center locations depend on our providers.</p>
 
-6. Изменения политики
+    <h2>7. Security</h2>
+    <ul>
+      <li>TLS/HTTPS in transit; at-rest encryption where applicable.</li>
+      <li>Access minimization, key/token rotation, audit logs.</li>
+      <li>Separated dev/prod environments.</li>
+      <li>Timely dependency/SDK updates and vulnerability remediation.</li>
+    </ul>
 
-Мы можем время от времени обновлять настоящую Политику. Новая версия будет опубликована в Приложении с указанием даты вступления в силу.
+    <h2>8. Cookies & Identifiers</h2>
+    <p>The App uses SDK identifiers (instance IDs, push tokens) and similar technologies. If you visit our website, cookies may be used for basic analytics and functionality; you can control cookies via your browser settings.</p>
 
-English Version
+    <h2>9. Advertising & Tracking</h2>
+    <p>By default, we do <strong>not</strong> run targeted advertising. If we introduce ads or personalization in the future, we will request consent first (e.g., iOS ATT/IDFA) and provide opt-out controls.</p>
 
-Effective date: September 16, 2025
-Contact person: Artem Kolchin
-Email: a.kolchin928@gmail.com
+    <h2>10. Push Notifications</h2>
+    <p>We send push notifications only with your permission and only for service/feature purposes. You can disable them in system settings.</p>
 
-This Privacy Policy explains how the application (“App”, “we”, “our” or “us”) collects, uses, and protects user information (“you”, “your”), as well as the rights and choices you have regarding your data.
+    <h2>11. Your Rights</h2>
+    <p>Subject to your jurisdiction, you may:</p>
+    <ul>
+      <li>Request access to and a copy of your data.</li>
+      <li>Request rectification of inaccuracies.</li>
+      <li>Request deletion (except where law requires retention).</li>
+      <li>Restrict or object to processing.</li>
+      <li>Data portability.</li>
+      <li>Withdraw consent (where processing relies on consent).</li>
+      <li>Lodge a complaint with your data protection authority.</li>
+    </ul>
+    <p>Submit requests to: <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a>. We may ask for identity verification. We usually respond within 30 days.</p>
 
-1. Data Collection
+    <h2>12. Children</h2>
+    <p>The App is not intended for children under 13 (or the age of consent in your region). We do not knowingly collect data from children. Contact us to remove any such data.</p>
 
-We may collect the following types of data:
+    <h2>13. “Sale” / “Sharing” of Data (CCPA/CPRA)</h2>
+    <p>We do not sell personal information and do not “share” it for cross-context behavioral advertising. If this changes, we will provide a clear opt-out mechanism.</p>
 
-Technical data (device type, operating system, app version, system language).
+    <h2>14. Changes to this Policy</h2>
+    <p>We may update this Policy from time to time. The current version is available here and within the App. The “Effective Date” reflects the latest revision.</p>
 
-Usage data (frequency and duration of use, interactions with features).
+    <h2>15. Contact</h2>
+    <p>Artem Kolchin — <a href="mailto:a.kolchin928@gmail.com">a.kolchin928@gmail.com</a></p>
+  </section>
 
-Personal data (e.g., name, email address) — only if you voluntarily provide it (e.g., during registration or feedback).
+  <hr />
+  <section>
+    <h2>Шаблоны уведомлений / Templates</h2>
+    <div class="card">
+      <h3>Отзыв согласия на пуш-уведомления / Withdraw Push Consent</h3>
+      <p class="mono">Settings → Notifications → [App Name] → Disable</p>
+    </div>
+    <div class="card">
+      <h3>Запрос на удаление данных / Data Deletion Request</h3>
+      <p class="mono">Subject: Data Deletion Request — [App Name]<br/>Body: Please delete my personal data linked to [your email or install ID].</p>
+    </div>
+  </section>
 
-2. Use of Data
-
-Collected data may be used for:
-
-Operating and improving the App.
-
-Communicating with users.
-
-Analytics and statistics to enhance user experience.
-
-Compliance with legal obligations.
-
-3. Sharing of Data
-
-We do not share personal data with third parties, except:
-
-When necessary for the App’s operation (e.g., hosting, analytics).
-
-When required by law.
-
-With your explicit consent.
-
-4. Data Storage and Security
-
-We take reasonable measures to protect your data from unauthorized access, modification, or destruction. Data is retained only as long as necessary for the purposes outlined in this Policy.
-
-5. User Rights
-
-You have the right to:
-
-Request access to your data.
-
-Request correction or deletion of your data.
-
-Withdraw consent for data processing (if processing is based on consent).
-
-6. Changes to the Policy
-
-We may update this Policy from time to time. The updated version will be published in the App with the effective date.
-	</body>
+  <footer class="muted">
+    <hr />
+    <p><small>© 2025 Artem Kolchin. Этот документ предоставлен «как есть» и может требовать адаптации к вашим конкретным функциям, SDK и юрисдикциям.</small></p>
+  </footer>
+</main>
+</body>
 </html>
